@@ -173,11 +173,12 @@ def monty_hall_sim(numdoors, numgames):
     plt.ylabel("Number of Wins")
     axes = plt.gca()
     axes.set_ylim([0,numgames + 1])
-    axes.annotate("wins", xy=(x,y1[:-1][:-1]))
     plt.plot(x,y1,color='blue',label="Stay")
     plt.plot(x,y2,color='red',label="Change")
-    plt.legend()
     plt.show()
+    print("Results:")
+    print("Number of wins from staying " + str(int(game_history_stay[-1])))
+    print("Number of wins from staying " + str(int(game_history_change[-1])))
     
 def monty_hall_sim_interactive(guess, change):
     doorStrings = ["Door 1","Door 2","Door 3"]
