@@ -178,7 +178,7 @@ def monty_hall_sim(numdoors, numgames):
     plt.show()
     print("Results:")
     print("Number of wins from staying " + str(int(game_history_stay[-1])))
-    print("Number of wins from staying " + str(int(game_history_change[-1])))
+    print("Number of wins from changing " + str(int(game_history_change[-1])))
     
 def monty_hall_sim_interactive(guess, change):
     doorStrings = ["Door 1","Door 2","Door 3"]
